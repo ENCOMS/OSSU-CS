@@ -1,0 +1,75 @@
+"""
+In a file called game.py, implement a program that:
+
+Prompts the user for a level:
+
+- If the user does not input a positive integer, the program should prompt again.
+- Randomly generates an integer between 1 and, inclusive, using the random module.
+
+Prompts the user to guess that integer:
+
+- If the guess is not a positive integer, the program should prompt the user again.
+- If the guess is smaller than that integer, the program should output Too small! and prompt the user again.
+- If the guess is larger than that integer, the program should output Too large! and prompt the user again.
+- If the guess is the same as that integer, the program should output Just right! and exit.
+"""
+
+import random
+import re
+
+
+def main():
+    level = rand_level()
+    print(level)
+
+    while True:
+        result = guess_game(level)
+        if result != "Just right!":
+            print(result)
+            continue
+        else:
+            return print(result)
+
+
+def rand_level():
+    while True:
+        user_input = input("Level: ")
+        if is_positive_number(user_input):
+            num = int(user_input)
+            return random.randint(1, num)
+        else:
+            continue
+
+
+def guess_game(level):
+    guess = input("Guess: ")
+    if is_positive_number(guess):
+        guess = int(guess)
+    if guess < level:
+        return "Too small!"
+    elif guess > level:
+        return "Too large!"
+    elif guess == level:
+        return "Just right!"
+
+
+def is_positive_number(num):
+
+    is_float = re.findall("[.]", num)
+    is_negative = re.findall("[-]", num)
+
+    if num.isalpha() or num == "":
+        print("Input need to be a number")
+        return False
+    if is_float:
+        print("Input cannot be a float point number")
+        return False
+    if is_negative:
+        print("Input cannot be a negative number")
+        return False
+    if int(num) > 0:
+        return True
+
+
+if __name__ == "__main__":
+    main()
