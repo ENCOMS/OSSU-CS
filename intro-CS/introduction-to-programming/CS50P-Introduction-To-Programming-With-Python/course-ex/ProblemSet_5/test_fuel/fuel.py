@@ -1,5 +1,6 @@
 import re
 
+
 def main():
     Z = gauge(convert(user_input()))
     print(Z)
@@ -20,7 +21,7 @@ def convert(fraction):
         raise ValueError("Values must be a number")
     f1 = int(f1)
     f2 = int(f2)
-    result = int(round((f1/f2)*100))
+    result = int(round((f1 / f2) * 100))
     return result
 
 
@@ -29,7 +30,7 @@ def gauge(percentage):
         return "E"
     if percentage >= 99:
         return "F"
-    return str(percentage)+"%"
+    return str(percentage) + "%"
 
 
 if __name__ == "__main__":

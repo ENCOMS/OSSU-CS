@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "cs50p-introduction-to-programming-with-python"
+version = "0.1.0"
+description = ""
+authors = ["ENCOMS <garciaricardojf@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+numpy = "^2.1.2"
+pandas = "^2.2.3"
+requests = "^2.32.3"
+pytest = "^8.3.3"
+black = "^24.10.0"
+simplejson = "^3.19.3"
+chardet = "^5.2.0"
+annotated-types = "^0.7.0"
+beautifulsoup4 = "^4.12.3"
+bs4 = "^0.0.2"
+colorama = "^0.4.6"
+emoji = "^2.14.0"
+html5lib = "^1.1"
+inflect = "^7.4.0"
+mypy-extensions = "^1.0.0"
+setuptools = "^75.1.0"
+wheel = "^0.44.0"
+pydantic = "^2.9.2"
+cowsay = "^6.1"
+pyfiglet = "^1.0.2"
+six = "^1.16.0"
+soupsieve = "^2.6"
+typing-extensions = "^4.12.2"
+urllib3 = "^2.2.3"
+pip = "^24.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
