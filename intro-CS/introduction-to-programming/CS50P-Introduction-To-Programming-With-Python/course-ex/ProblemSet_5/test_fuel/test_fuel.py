@@ -11,6 +11,9 @@ def test_not_characters_variables2():
     with pytest.raises(ValueError):
         convert("1/dog")
 
+def test_not_characters_variables3():
+    with pytest.raises(ValueError):
+        convert("3/1")
 
 def test_not_divided_by_0():
     with pytest.raises(ZeroDivisionError):
