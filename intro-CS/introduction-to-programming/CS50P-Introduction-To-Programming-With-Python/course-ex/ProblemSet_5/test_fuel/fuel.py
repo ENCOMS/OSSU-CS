@@ -8,7 +8,7 @@ def main():
 
 def user_input():
     u = input("Fraction: ").strip()
-    if len(u) < 0 or re.search("/", u) == None:
+    if len(u) < 0 or re.search("/", u) is None:
         user_input()
     return u
 
