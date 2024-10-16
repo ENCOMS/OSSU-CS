@@ -32,6 +32,7 @@ soupsieve = "^2.6"
 typing-extensions = "^4.12.2"
 urllib3 = "^2.2.3"
 pip = "^24.2"
+pylama = "^8.4.1"
 
 
 [build-system]
