@@ -80,7 +80,7 @@ def test_negative():
 def test_zero():
     assert square(0) == 0
 
-# We raise an error
+# We raise an error, this is imported from pytest lib
 def test_str():
     with pytest.raises(TypeError):
         square("cat")

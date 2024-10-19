@@ -33,6 +33,7 @@ typing-extensions = "^4.12.2"
 urllib3 = "^2.2.3"
 pip = "^24.2"
 pylama = "^8.4.1"
+pymarkdownlnt = "^0.9.24"
 
 
 [build-system]
