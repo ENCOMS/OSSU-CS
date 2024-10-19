@@ -61,16 +61,18 @@ conventions that per pytest
 + Pytest file should start with either test_filename or filename_test
 + Naming convention for all functions should start with test_
 + The name should have a meaning of what it is testing.
-
-like: test_convert.py
++ It should look like this: test_convert.py
 
 tip:
-+ If function convention test_name-of-function is follow pytest would no take it into acount.
++ If function convention test_name-of-function is follow pytest would no
+take it into account.
 
 ## Ways to implement pytest
 
-1. By only unsing keyword assert of pytest, then running the file with pytest.
-2. If we need some function from pytest we can import pytest, then use his functions.
+1. By only using keyword assert of pytest, then running the file with
+pytest.
+2. If we need some function from pytest we can import pytest, then use
+his functions.
 
 ## Unit-testing
 
@@ -116,9 +118,12 @@ test_convert.py .                                                               
 case it say it passed 1, since is one function with two assert. If both
 assert are true it will be passed.
 
-We can assert many things, in this we can assert if  the function raise an error:
+## Assert an Error
 
-example 3 - raising an error
+We can assert many things, in this we can assert if the function raise an error.
+In pytest there is a method called raises that can do that.
+
+Example 3 - asserting an Error
 
 ```python
  
@@ -131,17 +136,74 @@ def test_conversion():
     assert convert(1) == 149597870700
     assert convert(50) == 7479893535000
 
+
+def test_error():
+    with pytest.raises(TypeError):
+        convert("1")
+
 ```
 
-**Output**
+Terminal Output:
 
 ```bash
 
 plugins: typeguard-4.3.0, pylama-8.4.1
-collected 1 item                                                                                                     
+collected 2 item                                                                                                     
 
-test_convert.py .                                                                                              [100%]
+test_convert.py ..                                                                                              [100%]
 
 ================================================= 1 passed in 0.02s ==================================================
 
 ```
+
+## Testing an approximate values
+
+
+
+Example 4 - assert approximate number
+
+```python
+ 
+import pytest
+
+from convert import convert
+
+
+def test_int_conversion():
+    assert convert(1) == 149597870700
+    assert convert(50) == 7479893535000
+
+
+def test_error():
+    with pytest.raises(TypeError):
+        convert("1")
+
+
+def test_float_conversion():
+    assert convert(0.001) == pytest.approx(149597870.691)
+
+
+def test_float_conversion():
+    assert convert(0.001) == pytest.approx(149597870.691, abs=1e-2)
+    
+```
+
+Terminal Output:
+
+```bash
+
+plugins: typeguard-4.3.0, pylama-8.4.1
+collected 4 item                                                                                                     
+
+test_convert.py ....                                                                                             [100%]
+
+================================================= 1 passed in 0.02s ==================================================
+
+```
+
+Like this we can assert approx number or if we use abs we can change
+this tolerance the way we need.
+
+Tip:
+We shouldn't adjust the tolerance until it gets passed, we need to make
+sure your code is giving the right values we are hoping for here.
