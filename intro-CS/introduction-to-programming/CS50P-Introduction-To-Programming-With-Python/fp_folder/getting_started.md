@@ -2,6 +2,36 @@
 
 [cs50p final project link](https://cs50.harvard.edu/python/2022/project/)
 
+[] - Your project must be implemented in Python.
+
+[] - Your project must have a `main` function and three or more additional 
+  functions. At least three of those additional functions must be 
+  accompanied by tests that can be executed with `pytest`.
+
+[] - Your `main` function must be in a file called `project.py`, which 
+  should be in the “root” (i.e., top-level folder) of your project.
+
+[] - Your 3 required custom functions other than `main` must also be in 
+  `project.py` and defined at the same indentation level as `main` 
+  (i.e., not nested under any classes or functions).
+
+[] - Your test functions must be in a file called `test_project.py`, which 
+  should also be in the “root” of your project. Be sure they have the 
+  same name as your custom functions, prepended with `test_` ( 
+  `test_custom_function`, for example, where `custom_function` is a 
+  function you’ve implemented in `project.py`).
+
+[] - You are welcome to implement additional classes and functions as 
+  you see fit beyond the minimum requirement.
+
+[] - Implementing your project should entail more time and effort than is 
+  required by each of the course’s problem sets.
+
+[] - Any pip-installable libraries that your project requires must be 
+  listed, one per line, in a file called requirements.txt in the root 
+  of your project.
+
+
 ## Getting started
 
 Here are some questions that you should think about as you start:
@@ -70,15 +100,17 @@ Consider making goal milestones to keep you on track.
 
 ## Step 1 of 3
 
-Create a short video (that’s no more than 3 minutes in length) in which 
+[] - Create a short video (that’s no more than 3 minutes in length) in which 
 you present your project to the world. Your video must begin with an 
 opening section that displays:
 
-+ your project’s title;
-+ your name;
-+ your GitHub and edX usernames;
-+ your city and country;
-+ and, the date you have recorded this video.
++ your project’s title;  []
++ your name; []
++ your GitHub and edX usernames; []
++ your city and country; []
++ and, the date you have recorded this video. []
+
+### Note 1 - How to record:
 
 It should then go on to demonstrate your project in action, as with 
 slides, screenshots, voiceover, and/or live action. See 
@@ -93,10 +125,11 @@ Submit [this form!](https://forms.cs50.io/5e2dd8e8-3c8b-4eb2-b77d-085836253f26)
 
 ## Step 2 of 3
 
-Create a `README.md` text file (named exactly that!) in your `~/project` 
-folder that explains your project. This file should include your 
-Project title, the URL of your video (created in step 1 above) and a 
-description of your project. You may use the below as a template.
+[] - Create a `README.md` text file (named exactly that!) in your `~/project` 
+folder that explains your project. This file should include your:
++ Project title. []
++ URL of your video. []
++ A description of your project. You may use the below as a template. []
 
 ```txt
     # YOUR PROJECT TITLE
@@ -104,6 +137,8 @@ description of your project. You may use the below as a template.
     #### Description:
     TODO
 ```
+
+### Note 2 - How to use markdown:
 
 If unfamiliar with Markdown syntax, you might find GitHub’s [Basic 
 Writing and Formatting 
@@ -118,16 +153,23 @@ tens of thousands of words in length; yours need not be that long, but
 should at least be several hundred words that describe things in 
 detail!
 
-#### Important!
-Your README.md file should be minimally multiple paragraphs in length, 
-and should explain what your project is, what each of the files you 
-wrote for the project contains and does, and if you debated certain 
-design choices, explaining why you made them. Ensure you allocate 
-sufficient time and energy to writing a README.md that documents your 
-project thoroughly. Be proud of it! A README.md in the neighborhood of 
-500 words is likely to be sufficient for describing your project and 
-all aspects of its functionality. If unable to reach that threshold, 
-that probably means your project is insufficiently complex.
+### Note 3 - Important points of the README.md file:
+
++ Your README.md file should:
+be minimally multiple paragraphs in length, around 500 words or more. [] 
+
+The readme.md file should explain:
+
++ What your project is. []
++ What each of the files you wrote for the project contains and does. []
++ If you debated certain design choices, explaining why you made them. []
+
+Ensure you allocate sufficient time and energy to writing a README.md 
+that documents your project thoroughly. Be proud of it! A README.md in 
+the neighborhood of 500 words is likely to be sufficient for describing 
+your project and all aspects of its functionality. If unable to reach 
+that threshold, that probably means your project is insufficiently 
+complex.
 
 ### Submit
 
