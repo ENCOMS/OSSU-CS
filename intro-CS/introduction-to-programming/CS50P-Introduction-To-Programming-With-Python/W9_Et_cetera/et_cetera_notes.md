@@ -4,15 +4,15 @@ What can you do more generally beyond the fundamental concepts.
 
 [Et cetera video](https://learning.edx.org/course/course-v1:HarvardX+CS50P+Python/block-v1:HarvardX+CS50P+Python+type@sequential+block@1e2042142d3d4008a6b129c3c3f2a080/block-v1:HarvardX+CS50P+Python+type@vertical+block@9caed2bc85214ec8a099674bdca13d41)
 
-Appart from the fundamental there are other concepts that din't blend
-too well with past concepts, as for comprenhention they needed more
+Apart from the fundamental there are other concepts that din't blend
+too well with past concepts, as for comprehension they needed more
 knowledge.
 
 for example:
 
 ## set
 
-In mathematics, a set is a typically a collection of values wherein 
+In mathematics, a set is a typically a collection of values where in
 there are no duplicates. So it's not quite a list.
 It's a bit more special that that in that somehow any duplicates are
 eliminated for you.
@@ -26,7 +26,7 @@ docs.python.org/3/library/stdtypes.html#set
 
 Problem: Filtering the duplicates
 
-### Example 1a - set - filter the duplicates using list and for loops.
+### Example 1a - set - filter the duplicates using list and for loops
 
 [houses.py#Example1a](houses.py?plain=1#L1)
 
