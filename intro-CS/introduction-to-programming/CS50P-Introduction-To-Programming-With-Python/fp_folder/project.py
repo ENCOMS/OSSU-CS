@@ -1,4 +1,5 @@
 from tabulate import tabulate
+import os
 import csv
 
 
@@ -11,6 +12,8 @@ def main():
     
     # ~ print(tabulate(data, headers, tablefmt="fancy_grid" ))
     
+    os.system('cls' if os.name == 'nt' else 'clear')
+
     pa_info = pa_csv_sets("power_armor_information.csv")
     pa1 = "Power armor chassis"
     pa2= "X-01 power armor"
